@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="btn.css">
+	<link rel="stylesheet" href="feedback.css">
+	<title>Computer Repair</title>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        
+
+        .number2 {
+            margin: 50px auto; /* Задає зовнішній відступ від краю сторінки та автоматично вирівнює блок по центру */
+            max-width: 800px; /* Задає максимальну ширину блоку */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="header_nav">
+			<div class="nav_margin">
+				<p class="logo">c<span> o </span>mp</p>
+				<div class="nav_links">
+					<a href="index.html" class="nav_link">Main</a>
+					<a href="Our services.html" class="nav_link">Our services</a>
+					<a href="About.html" class="nav_link">About</a>
+					<a href="Contacts.html" class="nav_link">Contacts</a>
+				</div>
+				<div class="nav_languages">
+					<a href="index.html" class="nav_en">EN</a>
+					<a href="UA.html" class="nav_ua">UA</a>
+				</div>
+			</div>
+		</nav>
+
+
+		
+
+		<div class="menu-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="menu">
+			<nav>
+				<li><a href="index.html">Main</a></li>
+				<li><a href="Our services.html">Our services</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="Contacts.html">Contacts</a></li>
+			</nav>
+		</div>
+
+
+
+
+		<div class="header_box ">
+			<div class="header_margin">
+				<div class="header_title">
+					OUR SERVICES<br>
+                                      
+				</div>
+
+			</div>
+
+		</div>
+
+
+  
+	</header>
+	<main class="main">
+		<div class="main_groups">
+			<div class="main_call main_group">
+				<img src="img/call.svg" alt="call">
+				<h3>CALL US NOW FOR THE PHONE: +380636745386 </h3>
+				<p>Feel free to call us</p>
+			</div>
+
+			<div class="main_calendar main_group">
+				<img src="img/calendar 2.svg" alt="call">
+				<h3>ONLINE CALENDAR</h3>
+				<a href="Календар.html"><p> Our Working Days</p> </a>
+			</div>
+			<div class="main_geo main_group">
+				<img src="img/maps-and-flags 1.svg" alt="call">
+				<h3>OUR SERVICE CENTER</h3>
+				<p>Kolomyia st. I. Mazepa 258-A</p>
+			</div>
+		</div>
+
+		<section class="offer">
+            <div class="offer_box">
+                <h4 class="offer_title">VIEW ALL SERVICES</h4>
+                <div class="offer_imgs">
+                    <div class="offer_img">
+                        <img src="img/group1.jpg" alt="1">
+                        <p>DIAGNOSTIC</p>
+                        <button class="info_button" onclick="showInfo('free diagnostics, which are carried out on expensive professional equipment;')">Show</button>
+                    </div>
+                    <div class="offer_img">
+                        <img src="img/computer_maintenance.jpg" alt="2">
+                        <p>CLEANING</p>
+                        <button class="info_button" onclick="showInfo('computer service, including cleaning the cooling system from dust and replacing thermal paste, which reduces the heating of the video card and processor;')">Show</button>
+                    </div>
+                    <div class="offer_img">
+                        <img src="img/group3.jpg" alt="3">
+                        <p>REPLACEMENT</p>
+                        <button class="info_button" onclick="showInfo('repair of computers and laptops with the replacement of components, parts and connectors that have failed, as well as software debugging;')">Show</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modalContent"></p>
+            </div>
+        </div>
+        
+        <script>
+            function showInfo(info) {
+                // Отримати елемент модального вікна та його вміст
+                var modal = document.getElementById('myModal');
+                var modalContent = document.getElementById('modalContent');
+        
+                // Задати вміст модального вікна
+                modalContent.innerHTML = info;
+        
+                // Показати модальне вікно
+                modal.style.display = 'flex';
+            }
+        
+            function closeModal() {
+                // Закрити модальне вікно
+                var modal = document.getElementById('myModal');
+                modal.style.display = 'none';
+            }
+        </script>
+	<section class="number2">
+    <h2> Additional services </h2>
+    <p>✔ Our service center for the repair of laptops and computers</p>
+    <p>✔ Upgrading a PC or laptop, including replacing the matrix or keyboard of a laptop computer;</p>
+    <p>✔ Installation and configuration of any software, including narrow-profile programs;</p>
+    <p>✔ Data recovery;</p>
+    <p>✔ Repair and flashing of printers, restoration and refilling of their cartridges;</p>
+    <p>✔ Server maintenance and outsourcing services for subscription maintenance of computer networks of enterprises and offices;</p>
+    <p>✔ Repair of monitors, LCD and LED TVs;</p>
+    <p>✔ Courier delivery of equipment to the service; </p>
+    </section>
+    
+		<section class="number">
+			<h2 class="number_title">FAST & EASY
+			</h2>
+			<p class="number_subtitle">our work process</p>
+			<number class="number_groups">
+				<div class="number_group">
+					<div>01. REQUEST YOUR QUOTE</div>
+					<p>We will be there when you most need us
+					</p>
+				</div>
+				<div class="number_group">
+					<div>02. BRING YOUR LAPTOP
+					</div>
+					<p>At heart, we're guys with laptops
+					</p>
+				</div>
+				<div class="number_group">
+					<div>03. GET IT REPAIRED</div>
+					<p>High-quality and inexpensive repair of laptops
+					</p>
+				</div>
+			</number>
+		</section>
+
+		<div class="section_feedback uk-tile" id="my-target-smooth">
+			<div class="wrapper">
+				<form action="https://formspree.io/f/mrgwnnrr" method="POST">
+					<h1>Feedback</h1>
+					<div class="input-box">
+						<input type="text" name="Last name" id="Last name" placeholder="Last name" required>
+						<input type="text" name="First name" id="First name" placeholder="First name" required>
+						<input type="email" id="Email" type="email" placeholder="Email" required>
+						<input type="phone" name="Phone" id="Phone" placeholder="Phone" required>
+					</div>
+					<div class="input-box">
+						<textarea class="wrapper-feedback" name="Message" id="Message" placeholder="Message"></textarea>
+					</div>
+					<button type="submit" class="btn">Send</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer_box">
+			<div class="footer_groups">
+				<div class="footer_title">© 2023 All rights reserved 
+				</div>
+				<div class="footer_group">
+					<a href="" class="footer_link">
+						<img src="img/linkedin 1.svg" alt="linkedin">
+						<a href="https://www.facebook.com/profile.php?id=100013973584854" class="footer_link">
+							<img src="img/facebook 1.svg" alt="linkedin">
+						</a>
+						<a href="https://www.instagram.com/bret2003fed/" class="footer_link">
+							<img src="img/instagram (1) 1.svg" alt="linkedin">
+						</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="burger.js" defer></script>
+
+	<script>
+		const myBtnSmooth = document.getElementById('my-btn-smooth');
+
+		myBtnSmooth.addEventListener('click', function () {
+			document.getElementById('my-target-smooth').scrollIntoView(
+				{ behavior: "smooth", block: "start" }
+			);
+		});
+	</script>
+</body>
+
+</html>
