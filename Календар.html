@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+.calendar {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.calendar th, .calendar td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.calendar th {
+  background-color: #f2f2f2;
+}
+.calendar td {
+  height: 100px;
+}
+.calendar td.workday {
+  background-color: #e6e6e6;
+}
+.controls {
+  text-align: center; 
+}
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label {
+  margin-right: 10px;
+}
+
+
+  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="btn.css">
+  <link rel="stylesheet" href="calendar.css">
+	<link rel="stylesheet" href="feedback.css">
+	<title>Computer Repair</title>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="header_nav">
+			<div class="nav_margin">
+				<p class="logo">c<span> o </span>mp</p>
+				<div class="nav_links">
+					<a href="index.html" class="nav_link">Main</a>
+					<a href="#" class="nav_link">Our services</a>
+					<a href="#" class="nav_link">About</a>
+					<a href="#" class="nav_link">Contacts</a>
+				</div>
+				<div class="nav_languages">
+					<a href="index.html" class="nav_en">EN</a>
+					<a href="UA.html" class="nav_ua">UA</a>
+				</div>
+			</div>
+		</nav>
+
+
+		
+
+		<div class="menu-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="menu">
+			<nav>
+				<li><a href="index.html">Main</a></li>
+				<li><a href="#">Our services</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contacts</a></li>
+			</nav>
+		</div>
+		
+
+
+
+		<div class="header_box ">
+			<div class="header_margin">
+				<div class="header_title">
+					Our Working Days<br>
+                                       
+				</div>
+			
+
+			</div>
+
+		</div>
+	</header>
+	
+
+<div>
+  <div class="controls"> <label for="month">Select Month:</label>
+    <select id="month" name="month">
+      <option value="0">January</option>
+      <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+      </select>
+
+    <label for="year">Enter the year:</label>
+    <input type="number" id="year" name="year" min="1900" max="2100" value="2023">
+
+    <button onclick="showCalendar()">Show</button>
+  </div>
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body">
+        </tbody>
+      </table>
+    </div>
+    
+    <main class="main">
+      <div class="main_groups">
+        <div class="main_call main_group">
+          <img src="img/call.svg" alt="call">
+          <h3>CALL US NOW FOR THE PHONE: +380636745386</h3>
+          <p>Feel free to call us</p>
+        </div>
+  
+        <div class="main_geo main_group">
+          <img src="img/maps-and-flags 1.svg" alt="call">
+          <h3>OUR SERVICE CENTER</h3>
+          <p>Our Service Center on the map</p>
+        </div>
+      </div>
+
+		<section class="number">
+			<h2 class="number_title">FAST & EASY
+			</h2>
+			<p class="number_subtitle">our work process</p>
+			<number class="number_groups">
+				<div class="number_group">
+					<div>01. REQUEST YOUR QUOTE</div>
+					<p>We will be there when you most need us
+					</p>
+				</div>
+				<div class="number_group">
+					<div>02. BRING YOUR LAPTOP
+					</div>
+					<p>At heart, we're guys with laptops
+					</p>
+				</div>
+				<div class="number_group">
+					<div>03. GET IT REPAIRED</div>
+					<p>High-quality and inexpensive repair of laptops
+					</p>
+				</div>
+			</number>
+		</section>
+
+		<div class="section_feedback uk-tile" id="my-target-smooth">
+			<div class="wrapper">
+				<form action="https://formspree.io/f/mrgwnnrr" method="POST">
+					<h1>Feedback</h1>
+					<div class="input-box">
+						<input type="text" name="Last name" id="Last name" placeholder="Last name" required>
+						<input type="text" name="First name" id="First name" placeholder="First name" required>
+						<input type="email" id="Email" type="email" placeholder="Email" required>
+						<input type="phone" name="Phone" id="Phone" placeholder="Phone" required>
+					</div>
+					<div class="input-box">
+						<textarea class="wrapper-feedback" name="Message" id="Message" placeholder="Message"></textarea>
+					</div>
+					<button type="submit" class="btn">Send</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer_box">
+			<div class="footer_groups">
+				<div class="footer_title">© 2023 All rights reserved 
+				</div>
+				<div class="footer_group">
+					<a href="" class="footer_link">
+						<img src="img/linkedin 1.svg" alt="linkedin">
+						<a href="https://www.facebook.com/profile.php?id=100013973584854" class="footer_link">
+							<img src="img/facebook 1.svg" alt="linkedin">
+						</a>
+						<a href="https://www.instagram.com/bret2003fed/" class="footer_link">
+							<img src="img/instagram (1) 1.svg" alt="linkedin">
+						</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="burger.js" defer></script>
+ 
+
+	<script>
+function showCalendar() {
+    var month = document.getElementById("month").value;
+    var year = document.getElementById("year").value;
+
+    var date = new Date(year, month, 1);
+    var firstDay = date.getDay();
+    var lastDay = new Date(year, month + 1, 0).getDate();
+    var weeksInMonth = Math.ceil((firstDay + lastDay) / 7);
+
+    var calendarBody = document.getElementById("calendar-body");
+    calendarBody.innerHTML = '';
+
+    var dayIndex = 1;
+
+    for (var i = 0; i < weeksInMonth; i++) {
+      var row = document.createElement("tr");
+
+      for (var j = 0; j < 7; j++) {
+        var cell = document.createElement("td");
+        if (i === 0 && j < firstDay) {
+          cell.appendChild(document.createTextNode(''));
+        } else if (dayIndex > lastDay) {
+          break;
+        } else {
+          cell.appendChild(document.createTextNode(dayIndex));
+          if (j > 0 && j < 6) { 
+            cell.classList.add('workday');
+          }
+          dayIndex++;
+        }
+        row.appendChild(cell);
+      }
+
+      calendarBody.appendChild(row);
+    }
+  }
+
+
+		const myBtnSmooth = document.getElementById('my-btn-smooth');
+
+		myBtnSmooth.addEventListener('click', function () {
+			document.getElementById('my-target-smooth').scrollIntoView(
+				{ behavior: "smooth", block: "start" }
+			);
+		});
+	</script>
+</body>
+
+</html>
