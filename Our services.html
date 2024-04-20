@@ -2,14 +2,20 @@
 <html lang="en">
 
 <head>
-    
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="btn.css">
 	<link rel="stylesheet" href="feedback.css">
+	<link rel="icon" href="img/logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="focus.css">
+	<link rel="button-close" href="button-close.css">
+	<script src="login-regista.js"> </script>
+	<script src="login.js" defer></script>
+	<script src="profile.js"></script>
 	<title>Computer Repair</title>
+
     <style>
         .modal {
             display: none;
@@ -55,17 +61,22 @@
 				<p class="logo">c<span> o </span>mp</p>
 				<div class="nav_links">
 					<a href="index.html" class="nav_link">Main</a>
-					<a href="Our services.html" class="nav_link">Our services</a>
+					
 					<a href="About.html" class="nav_link">About</a>
 					<a href="Contacts.html" class="nav_link">Contacts</a>
+					<a href="Market.html" class="nav_link">Market</a>
 				</div>
 				<div class="nav_languages">
 					<a href="index.html" class="nav_en">EN</a>
-					<a href="UA.html" class="nav_ua">UA</a>
+					<a href="#" class="nav_ua">UA</a>
 				</div>
-			</div>
+				
+				<a href="login.html" class="button" id="login-button">
+					
+					<img src="img/login2.jpg" alt="">
+</a>
+				</div>
 		</nav>
-
 
 		
 
@@ -74,16 +85,46 @@
 			<span></span>
 			<span></span>
 		</div>
-
-		<div class="menu">
+		
+		<div class="menu" id="menu">
+			
+			<div class="user-icon">
+				<img src="img/user.svg" alt="">
+				<hr>
+				<span> User Defold </span> 
+			</div>
+			<hr>
 			<nav>
-				<li><a href="index.html">Main</a></li>
-				<li><a href="Our services.html">Our services</a></li>
-				<li><a href="About.html">About</a></li>
-				<li><a href="#">Reviews</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="Contacts.html">Contacts</a></li>
+				<ul>
+					<li><a href="index.html">Main</a></li>
+					<li><a href="Our services.html">Our services</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="Market.html">Market</a></li>
+					
+				</ul>
 			</nav>
+			<hr>
+			<div class="menu-options">
+				<ul>
+					<li><a href="#">Catalog</a></li>
+					<li><a href="#">Help Center</a></li>
+					<li><a href="#">Chat</a></li>
+					<li><a href="#">Category</a></li>
+				   
+				</ul>
+			</div>
+			<hr>
+			<div class="user-actions">
+				<ul>
+					<li><a href="#">My Orders</a></li>
+					<li><a href="#">Cart</a></li>
+					<li><a href="#">Personalized Offers</a></li>
+					<li><a href="#">Wishlists</a></li>
+				  
+				</ul>
+			</div>
 		</div>
 
 
@@ -109,6 +150,7 @@
 
   
 	</header>
+	<hr>
 	<main class="main">
 		<div class="main_groups">
 			<div class="main_call main_group">
@@ -128,10 +170,10 @@
 				<p>Kolomyia st. I. Mazepa 258-A</p>
 			</div>
 		</div>
-
+		<hr>
 		<section class="offer">
             <div class="offer_box">
-                <h4 class="offer_title">VIEW ALL SERVICES</h4>
+              
                 <div class="offer_imgs">
                     <div class="offer_img">
                         <img src="img/group1.jpg" alt="1">
@@ -148,8 +190,12 @@
                         <p>REPLACEMENT</p>
                         <button class="info_button" onclick="showInfo('repair of computers and laptops with the replacement of components, parts and connectors that have failed, as well as software debugging;')">Show</button>
                     </div>
+					
+					
                 </div>
+				
             </div>
+			
         </section>
         
         <div id="myModal" class="modal">

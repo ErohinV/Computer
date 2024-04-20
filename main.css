@@ -11,6 +11,7 @@ html{
 	margin: 0;
 	padding: 0;
 	}
+	
 	h1{
 	margin-top: 0;
 	}
@@ -22,6 +23,235 @@ html{
 	border: 0;
 	}
 
+/*background*/
+
+/* Registrachion*/
+/* Стилізація кнопок */
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Стилізація форми */
+.registration-dialog {
+    display: none; /* Початково ховаємо форму */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 9999;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Стилізація вхідних полів та міток */
+.group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.main-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.highlight-span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.main-input:focus + .highlight-span {
+    transform: scaleX(1);
+}
+
+.label-email {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: top 0.3s ease, font-size 0.3s ease;
+}
+
+.main-input:focus ~ .label-email,
+.main-input:valid ~ .label-email {
+    top: -15px;
+    font-size: 12px;
+}
+
+/* profile */
+#profile-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#profile-button:hover {
+    background-color: #0056b3;
+}
+
+/* Додаткові стилі, якщо потрібно центрувати кнопку */
+#profile-button {
+    display: block; /* Кнопка повинна бути блоковим елементом, щоб центрувати */
+    margin: 0 auto; /* Центрування горизонтально */
+    text-align: center; /* Центрування внутрішнього тексту */
+    width: 150px; /* Ширина кнопки */
+}
+
+
+/* Стилізація кнопки реєстрації */
+#registration-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#registration-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+	/* Login*/
+	
+	.button {
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		cursor: pointer;
+		position: absolute;
+		right: 40px;
+	  }
+	  
+	  .button img {
+		width: 50px;
+		height: 50px;
+	  }
+	  
+
+	  /*reg*/
+
+	  .checkbox {
+		width: 223px;
+		height: 60px;
+		background-color: #d0d0d0;
+		border-radius: 30px;
+		position: relative;
+		color: black;
+		overflow: hidden;
+	  }
+	  
+	  #checkbox_toggle {
+		display: none;
+	  }
+	  
+	  .checkbox .toggle {
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		border-radius: 30px;
+		left: 5px;
+		cursor: pointer;
+		background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+		transition: 0.4s;
+		box-shadow: 0px 0px 3px rgb(255, 255, 20), 0px 0px 5px rgb(255, 255, 20);
+	  }
+	  
+	  .checkbox .slide {
+		width: 230px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		cursor: pointer;
+	  }
+	  
+	  .checkbox .slide .text {
+		font-size: 16px;
+		font-weight: 700;
+		z-index: 100;
+		cursor: pointer;
+	  }
+	  
+	  .check:checked + .checkbox .slide .toggle {
+		transform: translateX(113px);
+		background: linear-gradient(40deg, #8983f7, #a3dafb 70%);
+		box-shadow: -0px -0px 10px #8983f7, -0px -0px 3px #8983f7;
+	  }
+	  
+	  .check:checked + .checkbox .slide {
+		background-color: #0a1929;
+		color: #fff;
+	  }
+
+	  /*registration*/
+	  .registration-dialog {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: white;
+		padding: 20px;
+		border-radius: 60px;
+		box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+		z-index: 9999;
+	}
+
+	  
+
+	  /* Зміна кнопки після входу */
+	  
+	  #login-button.logged-in {
+		background-color: #009900;
+		border-radius: 50%;
+	  }
+	  
+	  #login-button.logged-in img {
+		display: none;
+	  }
+	  
+	  #login-button.logged-in:after {
+		content: "\f00c";
+		font-family: FontAwesome;
+		font-size: 16px;
+		color: white;
+	  }
 	/* Header */
 
 .header {
@@ -376,17 +606,22 @@ margin: 40px 0;
 
 
 
+.user-name{
+	margin-bottom: auto;
+}
 
 
-
-
+.user-icon{
+	text-align: center;
+  
+  }
 
 
 
 	/* Burger */
 
 	.menu-btn {
-		display: block;
+		display: flex;
 
 	}
 	.menu {
@@ -424,6 +659,11 @@ margin: 40px 0;
 	}
 	.menu-btn span:nth-of-type(3) {
 		top: calc(50% + 5px);
+	}
+	
+	.menu {
+		overflow-y: auto; /* Додаємо полосу прокрутки, якщо меню перевищує висоту екрану */
+		max-height: 120vh; /* Задаємо максимальну висоту для меню, щоб уникнути перекриття вмісту на маленьких екранах */
 	}
 	
 	.menu {

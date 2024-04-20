@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +9,13 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="btn.css">
 	<link rel="stylesheet" href="feedback.css">
+	<link rel="icon" href="img/logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="focus.css">
+	<link rel="button-close" href="button-close.css">
+	<script src="login-regista.js"> </script>
+	<script src="login.js" defer></script>
+	<script src="Market.js"></script>
+	<script src="profile.js"></script>
 	<title>Computer Repair</title>
 </head>
 
@@ -17,16 +25,24 @@
 			<div class="nav_margin">
 				<p class="logo">c<span> o </span>mp</p>
 				<div class="nav_links">
-					<a href="index.html" class="nav_link">Main</a>
+					
 					<a href="Our services.html" class="nav_link">Our services</a>
 					<a href="About.html" class="nav_link">About</a>
 					<a href="Contacts.html" class="nav_link">Contacts</a>
+					<a href="Market.html" class="nav_link">Market</a>
+                    <a href="Reviews.html" class="nav_link">Reviews</a>
 				</div>
 				<div class="nav_languages">
 					<a href="index.html" class="nav_en">EN</a>
 					<a href="UA.html" class="nav_ua">UA</a>
 				</div>
-			</div>
+				
+				<a href="login.html" class="button" id="login-button">
+					
+					<img src="img/login2.jpg" alt="">
+</a>
+				  
+		</div>
 		</nav>
 
 
@@ -37,18 +53,48 @@
 			<span></span>
 			<span></span>
 		</div>
-
-		<div class="menu">
+		
+		<div class="menu" id="menu">
+			
+			<div class="user-icon">
+				<img src="img/user.svg" alt="">
+				<hr>
+				<span> User Defold </span> 
+			</div>
+			<hr>
 			<nav>
-				<li><a href="index.html">Main</a></li>
-				<li><a href="Our services.html">Our services</a></li>
-				<li><a href="About.html">About</a></li>
-				<li><a href="#">Reviews</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="Contacts.html"">Contacts</a></li>
+				<ul>
+					<li><a href="index.html">Main</a></li>
+					<li><a href="Our services.html">Our services</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="Market.html">Market</a></li>
+					
+				</ul>
 			</nav>
+			<hr>
+			<div class="menu-options">
+				<ul>
+					<li><a href="#">Catalog</a></li>
+					<li><a href="#">Help Center</a></li>
+					<li><a href="#">Chat</a></li>
+					<li><a href="#">Category</a></li>
+				   
+				</ul>
+			</div>
+			<hr>
+			<div class="user-actions">
+				<ul>
+					<li><a href="#">My Orders</a></li>
+					<li><a href="#">Cart</a></li>
+					<li><a href="#">Personalized Offers</a></li>
+					<li><a href="#">Wishlists</a></li>
+				  
+				</ul>
+			</div>
 		</div>
-		<!--  -->
+	
 
 
 
@@ -71,6 +117,9 @@
 
 		</div>
 	</header>
+
+
+<hr>
 	<main class="main">
 		<div class="main_groups">
 			<div class="main_call main_group">
@@ -82,7 +131,7 @@
 			<div class="main_calendar main_group">
 				<img src="img/calendar 2.svg" alt="call">
 				<h3>ONLINE CALENDAR</h3>
-				<a href="Календар.html"<p>Our Working Days</p></a>
+				<a href="Календар.html"><p>Our Working Days</p></a>
 			</div>
 			<div class="main_geo main_group">
 				<img src="img/maps-and-flags 1.svg" alt="call">
@@ -90,10 +139,10 @@
 				<p>Kolomyia st. I. Mazepa 258-A</p>
 			</div>
 		</div>
-
+		<hr>
 		<section class="offer">
 			<div class="offer_box">
-				<h4 class="offer_title">VIEW ALL SERVICES</h4>
+				
 				<div class="offer_imgs">
 					<div class="offer_img">
 						<img src="img/group1.jpg" alt="1">
@@ -205,6 +254,11 @@
 			);
 		});
 	</script>
+
+
+
+
+
 </body>
 
 </html>

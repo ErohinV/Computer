@@ -1,0 +1,133 @@
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Змінено на 3 колонки */
+  grid-gap: 24px;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 100%; 
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+.product img {
+  width: 100%; 
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.product h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 40px;
+  color: #706f6f;
+}
+
+.product button {
+border: none;
+width: 48px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #8bc34a;
+color: #fff;
+border-radius: 10px;
+}
+
+.product button:hover {
+  background-color: #00ff40;
+}
+
+.main-window {
+  padding: 2px; /* Відступи всередині головного вікна */
+  text-align: center;
+  border: 2px solid #ccc; /* Обрамлення */
+  border-radius: 5px; /* Згладженість кутів */
+  margin: 20px auto; /* Відступи по краях (автоматично центрує) */
+  width: 80%; /* Ширина головного вікна */
+}
+
+.container-input {
+  position: relative;
+}
+
+.input {
+  width: 200px;
+  padding: 20px 0px 20px 40px;
+  border-radius: 9999px;
+  border: 1px solid #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: relative;
+  top: 12%;
+  left: 10px;
+  transform: translate(0, 50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 300px;
+}
+
+.product img {
+  width: 90%; /* Або можна встановити конкретну ширину, наприклад, 200px */
+  height: 300px; /* Автоматична висота, щоб зберегти пропорції */
+  object-fit: cover;
+  border-radius: 7px;
+
+}
+.price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.show-more-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-more-button button {
+  padding: 10px 20px;
+  background-color: #00ff0d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-more-button button:hover {
+  background-color: #0056b3;
+}
+.recently-viewed{
+  text-align: center;
+}
+
+.show-more-button{
+  text-align: center;
+}
+
+/* dialog */
+
+

@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="btn.css">
+	<link rel="stylesheet" href="feedback.css">
+	<link rel="icon" href="img/logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="focus.css">
+	<link rel="button-close" href="button-close.css">
+    <link rel="stylesheet" href="profil.css">
+	<script src="login-regista.js"> </script>
+	<script src="login.js" defer></script>
+	<title>Computer Repair</title>
+</head>
+
+<body>
+	<header class="header">
+		<nav class="header_nav">
+			<div class="nav_margin">
+				<p class="logo">c<span> o </span>mp</p>
+				<div class="nav_links">
+					<a href="index.html" class="nav_link">Main</a>
+					<a href="Our services.html" class="nav_link">Our services</a>
+					<a href="About.html" class="nav_link">About</a>
+					<a href="Contacts.html" class="nav_link">Contacts</a>
+					<a href="Market.html" class="nav_link">Market</a>
+				</div>
+				<div class="nav_languages">
+					<a href="index.html" class="nav_en">EN</a>
+					<a href="#" class="nav_ua">UA</a>
+				</div>
+				<div class="button">
+				<button ><a href="logout.html" class="logout-button">Вийти</a></button>
+</div>
+				</div>
+		</nav>
+
+
+		<!-- Burger -->
+
+		<div class="menu-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		
+		<div class="menu" id="menu">
+			
+			<div class="user-icon">
+				<img src="img/user.svg" alt="">
+				<hr>
+				<span> User Defold </span> 
+			</div>
+			<hr>
+			<nav>
+				<ul>
+					<li><a href="index.html">Main</a></li>
+					<li><a href="Our services.html">Our services</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="Market.html">Market</a></li>
+					
+				</ul>
+			</nav>
+			<hr>
+			<div class="menu-options">
+				<ul>
+					<li><a href="#">Catalog</a></li>
+					<li><a href="#">Help Center</a></li>
+					<li><a href="#">Chat</a></li>
+					<li><a href="#">Category</a></li>
+				   
+				</ul>
+			</div>
+			<hr>
+			<div class="user-actions">
+				<ul>
+					<li><a href="#">My Orders</a></li>
+					<li><a href="#">Cart</a></li>
+					<li><a href="#">Personalized Offers</a></li>
+					<li><a href="#">Wishlists</a></li>
+				  
+				</ul>
+			</div>
+		</div>
+	</header>
+
+
+	<footer class="footer">
+		<div class="footer_box">
+			<div class="footer_groups">
+				<div class="footer_title">© 2024 All rights reserved 
+				</div>
+				<div class="footer_group">
+					<a href="" class="footer_link">
+						<img src="img/linkedin 1.svg" alt="linkedin">
+						<a href="https://www.facebook.com/profile.php?id=100013973584854" class="footer_link">
+							<img src="img/facebook 1.svg" alt="linkedin">
+						</a>
+						<a href="https://www.instagram.com/bret2003fed/" class="footer_link">
+							<img src="img/instagram (1) 1.svg" alt="linkedin">
+						</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="burger.js" defer></script>
+
+	<script>
+		const myBtnSmooth = document.getElementById('my-btn-smooth');
+
+		myBtnSmooth.addEventListener('click', function () {
+			document.getElementById('my-target-smooth').scrollIntoView(
+				{ behavior: "smooth", block: "start" }
+			);
+		});
+	</script>
+</body>
+
+</html>
