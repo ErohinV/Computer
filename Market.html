@@ -29,9 +29,7 @@
 					<a href="index.html" class="nav_en">EN</a>
 					<a href="#" class="nav_ua">UA</a>
 				</div>
-				  <a href="login.html" class="button" id="login-button">
-					<img src="img/login2.jpg" alt="">
-</a>
+				<a href="login.html" class="button" id="login-button">Login</a>
 				</div>
 		</nav>
 
@@ -49,7 +47,7 @@
 			<div class="user-icon">
 				<img src="img/user.svg" alt="">
 				<hr>
-				<span> User Defold </span> 
+				<span> User </span> 
 			</div>
 			<hr>
 			<nav>
@@ -84,18 +82,33 @@
 		</div>
 	</header>
 
+	
+	
     <div class="main-window">
-        <div class="container-input">
-            <input type="text" placeholder="Search" name="text" class="input">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#000000" fill="none">
-              <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-          </svg>
-          </div>
-
+		<button id="toggleButton">⟫</button>
+		<div class="side-window">
+			<div class="container-input">
+				<input type="text" placeholder="Search" name="text" class="input">
+				<button class="search-button">Search</button>
+			  </div>
+			  <hr>
+			  <script>
+			document.querySelector('#toggleButton').addEventListener('click', function() {
+  var sideWindow = document.querySelector('.side-window');
+  sideWindow.style.display = sideWindow.style.display === 'block' ? 'none' : 'block';
+});
+			  </script>
+			  
+			<button class="category-button">#</button>
+			<hr>
+  			<button class="category-button">#</button>
+			<hr>
+ 			<button class="category-button">#</button>
+			<hr>
+		</div>
+    
           <div class="product-list">
     <div class="container">
-        <!-- Продукти -->
         <div class="product">
           <img src="img/30200012.png" alt="Product 1">
 		  <div class="rating">
@@ -105,14 +118,12 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата Gigabyte B550M Aorus Elite (sAM4, AMD B550, PCI-Ex16)</h2>
-
-
+          <h2>Motherboard Gigabyte B550M Aorus Elite (sAM4, AMD B550, PCI-Ex16)</h2>
+		  
 		  <div class="price">
 			<span class="price">4 399<small>₴</small></span>
 			<button><span class="heart"><ion-icon name="heart"></ion-icon></span></button>
           <button><span class="cart"><ion-icon name="cart-outline"></ion-icon></span></button>
-		  
         </div>
 		</div>
         <div class="product">
@@ -124,7 +135,7 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата Asus TUF Gaming B450-Plus II (sAM4, AMD B450, PCI-Ex16)</h2>
+          <h2>Motherboard Asus TUF Gaming B450-Plus II (sAM4, AMD B450, PCI-Ex16)</h2>
 
 <div class="price">
 	<span class="price">4 129<small>₴</small></span>
@@ -142,7 +153,7 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата Asus TUF Gaming B550M-Plus (sAM4, AMD B550, PCI-Ex16)</h2>
+          <h2>Motherboard Asus TUF Gaming B550M-Plus (sAM4, AMD B550, PCI-Ex16)</h2>
 
 
 <div class="price">
@@ -160,13 +171,12 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата Asus TUF Gaming A520M-Plus II (sAM4, AMD A520, PCI-Ex16)</h2>
+          <h2>Motherboard Asus TUF Gaming A520M-Plus II (sAM4, AMD A520, PCI-Ex16)</h2>
 
 		  <div class="price">
 			<span class="price">3 079<small>₴</small></span>
 			<button><span class="heart"><ion-icon name="heart"></ion-icon></span></button>
 		<button><span class="cart"><ion-icon name="cart-outline"></ion-icon></span></button>
-		
         </div>
 		</div>
         <div class="product">
@@ -178,7 +188,7 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата Asus TUF Gaming B650-Plus Wi-Fi (sAM5, AMD B650, PCI-Ex16)</h2>
+          <h2>Motherboard Asus TUF Gaming B650-Plus Wi-Fi (sAM5, AMD B650, PCI-Ex16)</h2>
 
 
 		  <div class="price">
@@ -196,7 +206,7 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата Gigabyte B550 AORUS Elite V2 (sAM4, AMD B550, PCI-Ex16)</h2>
+          <h2>Motherboard Gigabyte B550 AORUS Elite V2 (sAM4, AMD B550, PCI-Ex16)</h2>
          <div class="price">
 			<span class="price">5 799<small>₴</small></span>
 			<button><span class="heart"><ion-icon name="heart"></ion-icon></span></button>
@@ -212,10 +222,7 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата
-			 Asus PRIME Z790-A Wi-Fi (s1700, Intel Z790, PCI-Ex16)</h2>
-          
-		 
+          <h2>Motherboard  Asus PRIME Z790-A Wi-Fi (s1700, Intel Z790, PCI-Ex16)</h2>  
 		 <div class="price">
 			<span class="price">12 399<small>₴</small>	</span>
 			<button><span class="heart"><ion-icon name="heart"></ion-icon></span></button>
@@ -232,7 +239,7 @@
 			<span class="star"><ion-icon name="star"></ion-icon></span>
 			<span class="star"><ion-icon name="star-half"></ion-icon></span>
 		</div>
-          <h2>Материнская плата Gigabyte B760M Gaming X DDR4 (s1700, Intel B760, PCI-Ex16)</h2>
+          <h2>Motherboard Gigabyte B760M Gaming X DDR4 (s1700, Intel B760, PCI-Ex16)</h2>
          
 
 		  <div class="price">
@@ -254,7 +261,7 @@
 		</div>
 
 
-          <h2>Материнская плата Asus TUF Gaming B550-Plus (sAM4, AMD B550, PCI-Ex16)</h2>
+          <h2>Motherboard Asus TUF Gaming B550-Plus (sAM4, AMD B550, PCI-Ex16)</h2>
          
 		 <div class="price">
 		  <span class="price">6 199<small>₴</small></span>
@@ -276,7 +283,7 @@
 		  </div>
   
   
-			<h2>Материнська плата Asus Pro WS WRX80E-SAGE SE WIFI (sWRX8, AMD WRX80, PCI-Ex16)</h2>
+			<h2>Motherboard Asus Pro WS WRX80E-SAGE SE WIFI (sWRX8, AMD WRX80, PCI-Ex16)</h2>
 		   
 		   <div class="price">
 			<span class="price">39 101<small>₴</small></span>
@@ -299,7 +306,7 @@
 		  </div>
   
   
-			<h2>Материнська плата Asus ROG STRIX B650-A Gaming Wi-Fi (sAM5, AMD B650, PCI-Ex16)</h2>
+			<h2>Motherboard Asus ROG STRIX B650-A Gaming Wi-Fi (sAM5, AMD B650, PCI-Ex16)</h2>
 		   
 		   <div class="price">
 			<span class="price">11 299<small>₴</small></span>
@@ -321,7 +328,7 @@
 		  </div>
   
   
-			<h2>Материнська плата Gigabyte B650M Aorus Elite AX Ice (sAM5, AMD B650, PCI-Ex16)</h2>
+			<h2>Motherboard Gigabyte B650M Aorus Elite AX Ice (sAM5, AMD B650, PCI-Ex16)</h2>
 		   
 		   <div class="price">
 			<span class="price">9 799<small>₴</small></span>
@@ -329,17 +336,18 @@
 		  <button><span class="cart"><ion-icon name="cart-outline"></ion-icon></span></button>
   
   </div>	
-      </div>
-	  <div class="show-more-button">
-		<span><button onclick="showMoreProducts()">Показати ще</button></span>
-	</div>
+     
 	
     </div>
 		  </div>
 	</div>
-
+</div>
+<div class="show-more-button">
+  <span><button onclick="showMoreProducts()">Show more</button></span>
+</div>
+<hr>
 	<div class="recently-viewed">
-		<h2>Переглянуті продукти</h2>
+		<h2>Reviewed Products</h2>
 		<div class="container">
 			<!-- Ваш код для переглянутих продуктів тут -->
 		</div>

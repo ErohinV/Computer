@@ -34,10 +34,7 @@
 					<a href="UA.html" class="nav_ua">UA</a>
 				</div>
 				
-				<a href="login.html" class="button" id="login-button">
-					
-					<img src="img/login2.jpg" alt="">
-</a>
+				<a href="login.html" class="button" id="login-button">Login</a>
 				</div>
 		</nav>
 
@@ -94,22 +91,40 @@
 
 
 		<div class="header_box ">
-			<div class="header_margin">
-				<div class="header_title">
-					MORE ABOUT US<br>
-                                       
-				</div>
-			<button id="my-btn-smooth" class="animated-button1 uk-button uk-button-primary">
-					WRITE TO US
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
+            <div class="header_margin">
+                <div class="header_title" data-key="title">
+                   
+                </div>
+                <button id="my-btn-smooth" class="animated-button1 uk-button uk-button-primary" data-key="button">
+                    WRITE TO US
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-		</div>
-	</header>
+
+            </div>
+
+        </div>
+        <script>
+            const images = [
+    'img/header.jpg',
+    'img/header2.jpg',
+    'img/header3.jpg' 
+];
+let currentIndex = 0;
+
+function changeBackground() {
+    const headerBox = document.querySelector('.header_box');
+    currentIndex = (currentIndex + 1) % images.length;
+    headerBox.style.backgroundImage = `url(${images[currentIndex]})`;
+}
+
+setInterval(changeBackground, 5000); // змінює зображення кожні 5 секунд
+        </script>
+    </header>
+	
 	<main class="main">
 		<div class="main_groups">
 			<div class="main_call main_group">

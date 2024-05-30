@@ -1,27 +1,28 @@
 
 
 .container {
-  max-width: 1200px;
+  max-width: auto;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Змінено на 3 колонки */
-  grid-gap: 24px;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-gap: 12px;
 }
 
+
 .product {
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
   padding: 12px;
-  width: 100%; 
-  max-width: 300px; 
+  width: auto; 
+  max-width: auto; 
   margin: 0 auto; 
 }
 
 .product img {
-  width: 100%; 
+  width: 720px; 
   max-width: 100%; 
-  height: auto; 
+  height: 720px; 
   border-radius: 10px; 
 }
 
@@ -31,20 +32,21 @@
 }
 
 .product p {
-  font-size: 40px;
-  color: #706f6f;
+  font-size: 45px;
+  color: #000000;
 }
 
 .product button {
-border: none;
-width: 32px;
-height: 32px;
+
+border: 5px;
+width: 40px;
+height: 40px;
 display: flex;
 align-items: center;
 justify-content: center;
 background-color: #8bc34a;
 color: #fff;
-border-radius: 10px;
+border-radius: 8px;
 }
 
 .product button:hover {
@@ -58,41 +60,89 @@ border-radius: 10px;
   border-radius: 5px; 
   margin: 20px auto; 
   width: auto;
+  display: flex;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.side-window {
+  border-right: 3px solid #1cee00;
+  display: none;
+  width: auto; /* Задайте ширину бічного вікна */
+  height: auto; /* Задайте висоту бічного вікна */
+  background-color: #f5f5f5; /* Задайте колір бічного вікна */
+  animation: slideIn 0.9s forwards;
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.side-window.closed {
+  animation: slideOut 0.5s forwards;
+}
+
+
+.toggleButton{
+  width: 45px;
+  height: 45px;
+  padding: 0px;
+}
+
+.category-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0,1s ease;
+}
+
+.category-button:hover {
+  background-color: #ddd;
 }
 
 .container-input {
-  position: relative;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .input {
-  width: 200px;
-  padding: 20px 0px 20px 40px;
-  border-radius: 9999px;
-  border: 1px solid #333;
-  transition: all .2s ease-in-out;
-  outline: none;
-  opacity: 0.8;
+  flex-grow: 1;
 }
 
-.container-input svg {
-  position: relative;
-  top: 12%;
-  left: 10px;
-  transform: translate(0, 50%);
+.search-button {
+  margin-left: 10px;
+  padding: 5px 10px;
 }
 
-.input:focus {
-  opacity: 1;
-  width: 300px;
-}
 
 .product img {
-  width: 90%; /* Або можна встановити конкретну ширину, наприклад, 200px */
-  height: 300px; /* Автоматична висота, щоб зберегти пропорції */
-  object-fit: cover;
+  width: 240px; /* Або можна встановити конкретну ширину, наприклад, 200px */
+  height: 240px; /* Автоматична висота, щоб зберегти пропорції */
+  object-fit: fill;
   border-radius: 7px;
 
 }
+
+
 .price {
   display: flex;
   flex-flow: row nowrap;
@@ -104,14 +154,16 @@ border-radius: 10px;
 
 .show-more-button {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center; /* Це вирівняє елементи по горизонталі */
 }
 
 .show-more-button button {
   padding: 10px 20px;
   background-color: #00ff0d;
   color: #fff;
-  border: none;
+  border: none; /* Виправлення помилки у властивості border */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
